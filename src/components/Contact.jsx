@@ -12,7 +12,7 @@ export default function Contact() {
         <div className={`contact-content fade-in ${isVisible ? 'visible' : ''}`} ref={ref}>
           <div className="contact-avatar">
             <div className="contact-avatar-inner">
-              <img src="/jasmeet.jpg" alt="Jasmeet" />
+              <img src={`${import.meta.env.BASE_URL}jasmeet.jpg`} alt="Jasmeet" />
             </div>
           </div>
 

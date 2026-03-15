@@ -22,7 +22,7 @@ export default function Hero() {
 
         <div className="hero-visual">
           <div className="hero-avatar-container">
-            <img src="/jasmeet.jpg" alt="Jasmeet" />
+            <img src={`${import.meta.env.BASE_URL}jasmeet.jpg`} alt="Jasmeet" />
           </div>
         </div>
       </div>
