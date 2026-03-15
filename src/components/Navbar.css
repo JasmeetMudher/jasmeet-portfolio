@@ -11,7 +11,7 @@
 
 .navbar.scrolled {
   box-shadow: var(--glass-shadow);
-  background: rgba(var(--color-bg), 0.8);
+  background: rgba(var(--color-bg-rgb), 0.8);
 }
 
 .navbar-inner {

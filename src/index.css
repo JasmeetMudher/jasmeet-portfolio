@@ -13,6 +13,7 @@
 
   /* Colors */
   --color-bg: #f4f6f8; /* Softer base */
+  --color-bg-rgb: 244, 246, 248;
   --color-bg-section: transparent; /* Sections now inherit the mesh background */
   --color-bg-card: var(--glass-bg);
   --color-text: #1a1b1e;
@@ -89,6 +90,7 @@
 
   /* Colors */
   --color-bg: #0d1117;
+  --color-bg-rgb: 13, 17, 23;
   --color-bg-section: transparent;
   --color-bg-card: var(--glass-bg);
   --color-text: #ffffff;
