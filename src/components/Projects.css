@@ -10,8 +10,8 @@
 
 .project-card {
   background: var(--glass-bg);
-  backdrop-filter: var(--glass-blur);
   -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
   border: 1px solid var(--glass-border);
   border-top: 3px solid var(--color-primary-light);
   border-radius: var(--radius-lg);
