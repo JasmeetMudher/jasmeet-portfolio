@@ -1,0 +1,102 @@
+.about {
+  background: var(--color-bg);
+}
+
+.about-content {
+  display: block;  /* Full width now that the illustration is removed */
+}
+
+.tech-groups-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-2xl);
+  margin-top: var(--space-xl);
+}
+
+.tech-category {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+  box-shadow: 
+    var(--glass-shadow),
+    inset 0 0 20px rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.tech-category.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tech-category-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-sm);
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.2);
+}
+
+.tech-category-icon {
+  font-size: 2rem;
+  padding: 8px;
+  background: rgba(var(--color-bg), 0.5);
+  border-radius: var(--radius-md);
+  box-shadow: inset 0 2px 5px rgba(255,255,255,0.3);
+}
+
+.tech-category-title {
+  font-size: var(--fs-xl);
+  font-weight: 800;
+  background: var(--color-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+}
+
+.tech-stack-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.tech-item {
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: var(--radius-full);
+  color: var(--color-text);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  animation: techPopIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) backwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes techPopIn {
+  from { opacity: 0; transform: scale(0.85) translateY(15px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.tech-item:hover {
+  transform: translateY(-8px) scale(1.1);
+  color: #fff;
+  border-color: var(--color-primary-light);
+  background: var(--color-gradient);
+  box-shadow: 
+    0 15px 25px rgba(108, 99, 255, 0.2),
+    inset 0 2px 5px rgba(255, 255, 255, 0.4);
+}
+
+

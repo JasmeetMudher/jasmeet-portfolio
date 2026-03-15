@@ -1,0 +1,101 @@
+.projects {
+  background: var(--color-bg);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-xl);
+}
+
+.project-card {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-top: 3px solid var(--color-primary-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  box-shadow: var(--glass-shadow);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  flex-direction: column;
+  transform: translateY(0) scale(1); /* Base state for transition to work from */
+}
+
+.project-card:hover {
+  box-shadow: 
+    var(--glass-shadow),
+    0 0 25px rgba(108, 99, 255, 0.25) !important;
+  transform: translateY(-4px) scale(1.02) !important; /* Subtle pop */
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.project-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-lg);
+}
+
+.project-card-icon {
+  font-size: 2rem;
+}
+
+.project-card-links {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.project-card-link {
+  color: var(--color-text-secondary);
+  transition: color var(--transition-fast);
+}
+
+.project-card-link:hover {
+  color: var(--color-primary);
+}
+
+.project-card-title {
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+  color: var(--color-text);
+}
+
+.project-card-description {
+  font-size: var(--fs-sm);
+  color: var(--color-text-light);
+  line-height: 1.7;
+  margin-bottom: var(--space-lg);
+  flex: 1;
+}
+
+.project-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.project-card-tag {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--fs-xs);
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.project-card-tag::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-primary-light);
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

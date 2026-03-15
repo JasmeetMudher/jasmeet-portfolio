@@ -1,0 +1,47 @@
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background: #e8e8ec;
+  border-radius: 30px;
+  padding: 4px;
+  width: 56px;
+  height: 30px;
+  position: relative;
+  transition: background var(--transition-base);
+  border: none;
+  outline: none;
+}
+
+[data-theme="dark"] .theme-toggle {
+  background: #2d3348;
+}
+
+.theme-toggle-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--transition-base);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.theme-toggle-thumb svg {
+  width: 14px;
+  height: 14px;
+}
+
+.theme-toggle.dark .theme-toggle-thumb {
+  transform: translateX(26px);
+}
+
+.theme-toggle .icon-sun {
+  color: #f59e0b;
+}
+
+.theme-toggle .icon-moon {
+  color: #6366f1;
+}
