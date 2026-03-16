@@ -3,36 +3,12 @@ import './Projects.css';
 
 const PROJECTS = [
   {
-    title: 'Distributed Load Balancer with Consistent Hashing',
-    description: 'Engineered a Dockerized Distributed Load Balancer using consistent hashing (512 slots) to efficiently route traffic to backend replicas. Developed dynamic scaling via RESTful APIs and a heartbeat monitoring system for automated recovery. Leveraged Docker Compose for portable Linux deployment and visualized 10K request performance with Matplotlib.',
-    icon: '⚖️',
-    tags: ['Python', 'Docker', 'Flask', 'Linux'],
-    liveUrl: '#',
-    githubUrl: '#',
-  },
-  {
-    title: 'Meteor Escape: 3D Survival Game',
-    description: 'Developed an interactive 3D survival game featuring real-time aircraft movement and procedural meteor generation. Engineered custom collision detection, dynamic difficulty scaling algorithms, and Tween-based animations. Optimized rendering performance for consistent frame rates across WebGL browsers.',
-    icon: '☄️',
-    tags: ['JavaScript', 'Three.js', 'WebGL', 'TweenMax.js'],
-    liveUrl: '#',
-    githubUrl: '#',
-  },
-  {
-    title: 'Drug-Dispensary Management System',
-    description: 'Developed a full-stack MIS to digitize prescriptions. Architected a Role-Based Access Control (RBAC) system for Admins, Dispensaries, and Pharmacies. Designed a MySQL schema for complex health data relationships and engineered a PHP mechanism for "Prescription Locking". Integrated AJAX and jQuery for a responsive dashboard.',
-    icon: '💊',
-    tags: ['PHP', 'MySQL', 'JavaScript', 'Bootstrap', 'AJAX'],
-    liveUrl: '#',
-    githubUrl: '#',
-  },
-  {
     title: 'Mental Health Sentiment Analysis Platform',
     description: 'Developed a comprehensive Machine Learning system to detect and classify mental health sentiments. Fine-tuned a RoBERTa transformer model (75.1% accuracy), engineered a real-time Gradio API, and built a full-stack React/JavaScript UI with Supabase for real-time data persistence.',
     icon: '🧠',
     tags: ['Python', 'RoBERTa', 'React', 'JavaScript', 'Supabase', 'Gradio'],
     liveUrl: '#',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/JasmeetMudher/Mental-Health-Detection',
   },
   {
     title: 'Sustainable Artisan E-commerce Platform',
@@ -41,6 +17,30 @@ const PROJECTS = [
     tags: ['Laravel', 'PHP', 'MySQL', 'JavaScript', 'Agile/Scrum'],
     liveUrl: '#',
     githubUrl: '#',
+  },
+  {
+    title: 'Drug-Dispensary Management System',
+    description: 'Developed a full-stack MIS to digitize prescriptions. Architected a Role-Based Access Control (RBAC) system for Admins, Dispensaries, and Pharmacies. Designed a MySQL schema for complex health data relationships and engineered a PHP mechanism for "Prescription Locking".',
+    icon: '💊',
+    tags: ['PHP', 'MySQL', 'JavaScript', 'Bootstrap'],
+    liveUrl: '#',
+    githubUrl: 'https://github.com/JasmeetMudher/Drug-Dispensary',
+  },
+  {
+    title: 'Meteor Escape: 3D Survival Game',
+    description: 'Developed an interactive 3D survival game featuring real-time aircraft movement and procedural meteor generation. Engineered custom collision detection, dynamic difficulty scaling algorithms, and Tween-based animations. Optimized rendering performance for consistent frame rates across WebGL browsers.',
+    icon: '☄️',
+    tags: ['JavaScript', 'Three.js', 'WebGL', 'TweenMax.js'],
+    liveUrl: '#',
+    githubUrl: 'https://github.com/JasmeetMudher/ComputerGraphicsProject',
+  },
+  {
+    title: 'Distributed Load Balancer with Consistent Hashing',
+    description: 'Engineered a Dockerized Distributed Load Balancer using consistent hashing (512 slots) to efficiently route traffic to backend replicas. Developed dynamic scaling via RESTful APIs and a heartbeat monitoring system for automated recovery. Leveraged Docker Compose for portable Linux deployment and visualized 10K request performance with Matplotlib.',
+    icon: '⚖️',
+    tags: ['Python', 'Docker', 'Flask', 'Linux'],
+    liveUrl: '#',
+    githubUrl: 'https://github.com/JasmeetMudher/distributed-load-balancer',
   },
 ];
 

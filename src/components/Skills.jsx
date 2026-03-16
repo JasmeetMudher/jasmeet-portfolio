@@ -16,7 +16,7 @@ const TECH_ICONS = [
 
 const SKILL_POINTS = [
   'Build dynamic frontends using React and modern JavaScript.',
-  'Design and deploy secure REST APIs with FastAPI and Flask.',
+  'Design and deploy secure REST APIs with FastAPI',
   'Structure optimized relational databases.',
 ];
 

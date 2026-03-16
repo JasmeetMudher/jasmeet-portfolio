@@ -3,12 +3,12 @@ import './Experience.css';
 
 const EXPERIENCES = [
   {
-    role: 'Banking Operations Intern',
+    role: 'Frontend Developer Intern',
     company: 'Bank of Baroda',
     date: 'Jan 2025 — Mar 2025',
-    logo: '🏦',
-    description: 'Utilized core enterprise banking software to process and track high-volume financial data. Analyzed transaction logs to resolve discrepancies, maintained strict data integrity, and collaborated with teams to optimize daily operational workflows.',
-    tech: ['Core Banking Systems', 'Data Analysis', 'Process Optimization'],
+    logo: '💻',
+    description: 'Developed and optimized internal web dashboards for processing high-volume financial data. Built responsive, modern UI components to streamline banking operations and collaborated with cross-functional teams to improve overall user experience and application performance.',
+    tech: ['React.js', 'JavaScript', 'UI Development', 'Performance Optimization'],
   },
 ];
 
